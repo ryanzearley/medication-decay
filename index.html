@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medication Decay</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://www.desmos.com/api/v1.7/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <main>
+        <div id="graph"></div>
+
+        <p id="title">See How Medication Tapers in the Body</p>
+
+        <form id="user-selection">
+          <div>
+            <label for="start">First Day Taking Medication:</label>
+            <input type="date" id="start" />
+          </div>
+
+          <div>
+            <label for="end">Last Day Taking Medication:</label>
+            <input type="date" id="end" />
+          </div>
+
+          <div>
+            <label for="dose">Daily Dose:</label>
+            <input
+              type="number"
+              id="dose"
+              name="dose"
+              min="0"
+              placeholder="milligrams"
+            />
+          </div>
+
+          <div>
+            <label for="halflife">Half Life of Medication:</label>
+            <input
+              type="number"
+              id="halflife"
+              name="halflife"
+              min="0"
+              oninvalid="alert('You must fill out the form!');"
+              required
+              placeholder="days"
+            />
+          </div>
+          <input type="submit" id="submit-button" />
+        </form>
+
+        <div id="disclaimer">
+          <p>
+            <strong>Disclaimer:</strong> This tool is for educational purposes
+            only and does not constitute accurate or reliable medical advice.
+            Always consult a medical professional before going off a medication.
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

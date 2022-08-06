@@ -1,0 +1,76 @@
+#container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 100vw;
+  height: 100vw;
+  font: 1rem "Roboto", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#user-selection {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#graph {
+  width: clamp(1rem, 75vw, 600px);
+  height: 400px;
+  margin: 1rem;
+}
+
+label {
+  display: inline-block;
+  width: 13rem;
+  text-align: right;
+}
+
+input {
+  width: 7rem;
+}
+
+input,
+label {
+  margin: 0.4rem;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#submit-button {
+  background-color: #0275d8;
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+#submit-button:active {
+  background-color: #0157a2;
+}
+
+#disclaimer {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+#disclaimer p {
+  width: 20rem;
+  text-align: justify;
+}
